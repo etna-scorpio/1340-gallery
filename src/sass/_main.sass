@@ -1,0 +1,124 @@
+// hero block
+.hero
+	+r(500)
+		margin-top: 30px
+
+.hero__txt
+	margin-top: 45px
+	text-align: center
+	text-transform: uppercase
+	+gb
+	font-size: 117px
+	line-height: 1
+	letter-spacing: 0.05em
+	color: #000
+	background: -webkit-linear-gradient(transparent, transparent), url(../img/coming-soon.jpg) repeat
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	-moz-background-clip: text
+	-moz-text-fill-color: transparent
+	white-space: nowrap
+	+r(1200)
+		white-space: normal
+		font-size: 100px
+	+r(1020)
+		font-size: 80px
+	+r(767)
+		font-size: 70px
+	+r(500)
+		font-size: 55px
+
+
+.hero__date
+	margin: 38px 0 88px
+	text-transform: uppercase
+	text-align: center
+	+gl
+	color: #000
+	font-size: 89px
+	line-height: 80px
+	letter-spacing: 0.31em
+	+r(1020)
+		font-size: 70px
+	+r(767)
+		margin: 38px 0 60px 15px
+		font-size: 50px
+
+// description section
+.desc
+	padding: 96px 0
+	background: #FFF
+	text-align: center
+	+r(500)
+		padding: 80px 0 70px
+
+.desc__subtitle
+	margin-top: 5px
+	text-transform: uppercase
+	+gl
+	font-size: 32px
+	color: #232323
+	font-weight: 300
+	letter-spacing: 0.04em
+	+r(1020)
+		margin-top: 10px
+	+r(767)
+		font-size: 28px
+	+r(500)
+		font-size: 20px
+
+.desc__text
+	margin-top: 13px
+	color: #232323
+	+dt
+	font-size: 18px
+	font-weight: 400
+	line-height: 1.45
+
+
+// join section
+.join
+	position: relative
+	min-height: 700px
+	background: url(../img/main-bg.jpg) no-repeat
+	overflow: hidden
+	+cover
+	z-index: 0
+	+r(1020)
+		min-height: 600px
+	+r(767)
+		min-height: auto
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(#eee, 0.3)
+		z-index: -1
+
+.join__bl
+	padding-top: 220px
+	margin-right: -150px
+	text-align: right
+	font-size: 39px
+	line-height: 1.2
+	+g
+	+r(1400)
+		margin-right: -100px
+	+r(1300)
+		margin-right: -50px
+	+r(1200)
+		margin-right: 0
+	+r(1020)
+		font-size: 30px
+	+r(767)
+		padding: 150px 0
+		font-size: 28px
+	+r(500)
+		padding: 120px 0
+		font-size: 25px
+
+.join__btn
+	margin-top: 27px

@@ -1,0 +1,87 @@
+.header__in
+	position: relative
+	padding-top: 47px
+	+clr
+	+r(500)
+		padding-top: 30px
+
+.header__btn
+	float: right
+	margin: 14px 0 0 34px
+	+r(500)
+		margin: 2px 0 0 0
+
+// menu
+.menu-wrap
+	float: right
+	font-size: 0
+
+.menu-wrap__btn
+	display: inline-block
+	vertical-align: middle
+	margin-left: 2px
+	+r(500)
+		display: block
+		text-align: right
+		margin: 10px 5px 0 0
+
+.menu
+	display: inline-block
+	vertical-align: middle
+	font-size: 0
+
+.menu__option
+	display: inline-block
+
+.menu__link
+	margin-right: 25px
+	padding: 5px 0
+	text-transform: uppercase
+	text-decoration: none
+	+gl
+	font-size: 12px
+	color: #9a999a
+	+tr(color 0.2s ease)
+	span
+		display: inline-block
+		+tr(transform 0.2s ease)
+	&:hover
+		color: #232323
+		span
+			transform: translate3d(0, -1px, 0)
+
+// context menu
+.context-menu
+	position: absolute
+	z-index: 1
+	top: 100%
+	right: 0
+	width: 100%
+	max-width: 185px
+	margin-top: 10px
+	padding: 6px 0 3px
+	+ml
+	background: #000
+	opacity: 0
+	visibility: hidden
+	transition: opacity 0.15s ease, visibility 0.15s ease
+	+r(500)
+		top: 45px
+	&.is-active
+		opacity: 1
+		visibility: visible
+
+.context-menu__option
+	margin: 10px 0
+
+.context-menu__link
+	display: block
+	padding: 5px 23px
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 12px
+	color: #787878
+	letter-spacing: 0.05em
+	+tr(color 0.15s ease)
+	&:hover
+		color: #FFF

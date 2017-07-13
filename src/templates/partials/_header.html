@@ -1,0 +1,28 @@
+<!-- begin header -->
+<header class="header">
+	<div class="l-center">
+		<div class="header__in">
+			<div class="header__btn">
+				<a href="#" class="btn-context js-context-btn"></a>
+			</div>
+			<div class="menu-wrap">
+				<ul class="menu">
+					<li class="menu__option"><a href="#" class="menu__link"><span>Home</span></a></li>
+					<li class="menu__option"><a href="#" class="menu__link"><span>Blog</span></a></li>
+					<li class="menu__option"><a href="#" class="menu__link"><span>Magazine</span></a></li>
+				</ul>
+				<div class="menu-wrap__btn">
+					<a href="#" class="btn">Join us now</a>
+				</div>
+			</div>
+			{% set contextMenu = ['About us', 'Company', 'Our process', 'Services', 'Contact us', 'F.A.Q.'] %}
+			<ul class="context-menu js-context-menu">
+				{% for i in contextMenu %}
+				<li class="context-menu__option"><a href="#" class="context-menu__link">{{ i }}</a></li>
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+</header>
+<!-- end header -->

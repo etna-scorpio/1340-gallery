@@ -1,0 +1,34 @@
+<!-- begin footer -->
+<footer class="footer">
+	<div class="l-center">
+		<div class="footer__in">
+			<div class="footer__top">
+				<div class="footer__slogan">
+					<p>JOIN OUR MOVEMENT</p>
+					<p>1340gallery</p>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="logo logo_center">
+					<a href="#" class="logo__link"><img src="img/logo-sm.png" alt="logo"></a>
+				</div>
+				<div class="footer__menu">
+				{% set footerLists = [{
+					title: ['For artists', 'For collectors', 'Blog', 'Magazine']
+				},
+				{
+					title: ['Support', 'Terms of use', 'Privacy policy', 'Contact']
+				}] %}
+					{% for list in footerLists %}
+					<ul class="footer-list">
+						{% for option in list.title %}
+						<li class="footer-list__option"><a href="#" class="footer-list__link">{{ option }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
