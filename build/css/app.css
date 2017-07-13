@@ -149,6 +149,19 @@ body {
   padding: 14px 21px;
 }
 
+.btn.btn_md-font {
+  font-size: 14px;
+}
+
+.btn.btn_red {
+  background-color: #E14F4F;
+  color: #fff;
+}
+
+.btn.btn_red:hover {
+  background: #c91e1e;
+}
+
 .btn.btn_blue {
   background-color: #26e6e6;
   color: #000;
@@ -440,11 +453,13 @@ body {
   line-height: 1.45;
 }
 
+.desc__btn {
+  margin-top: 20px;
+}
+
 .join {
   position: relative;
-  min-height: 700px;
-  background: url(../img/main-bg.jpg) no-repeat;
-  overflow: hidden;
+  background-image: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -458,17 +473,34 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(238, 238, 238, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
 
+.join__in {
+  *zoom: 1;
+}
+
+.join__in:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 .join__bl {
-  padding-top: 220px;
-  margin-right: -150px;
-  text-align: right;
-  font-size: 39px;
+  float: right;
+  max-width: 405px;
+  padding: 50px 0 60px;
+  font-size: 18px;
+  color: #FFF;
   line-height: 1.2;
   font-family: 'gillsans', sans-serif;
+}
+
+.join__ttl {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .join__btn {
@@ -606,29 +638,11 @@ body.is-ie .artists .artists__img {
   }
 }
 
-@media only screen and (max-width: 1400px) {
-
-  .join__bl {
-    margin-right: -100px;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-
-  .join__bl {
-    margin-right: -50px;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
 
   .hero__txt {
     white-space: normal;
     font-size: 100px;
-  }
-
-  .join__bl {
-    margin-right: 0;
   }
 }
 
@@ -676,11 +690,11 @@ body.is-ie .artists .artists__img {
     margin-top: 10px;
   }
 
-  .join {
-    min-height: 600px;
+  .join__bl {
+    max-width: 350px;
   }
 
-  .join__bl {
+  .join__ttl {
     font-size: 30px;
   }
 
@@ -732,12 +746,11 @@ body.is-ie .artists .artists__img {
     font-size: 28px;
   }
 
-  .join {
-    min-height: auto;
+  .join__bl {
+    max-width: 300px;
   }
 
-  .join__bl {
-    padding: 150px 0;
+  .join__ttl {
     font-size: 28px;
   }
 }
@@ -799,8 +812,15 @@ body.is-ie .artists .artists__img {
     font-size: 20px;
   }
 
+  .join:before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .join__bl {
-    padding: 120px 0;
+    max-width: initial;
+  }
+
+  .join__ttl {
     font-size: 25px;
   }
 

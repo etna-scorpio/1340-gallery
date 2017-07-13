@@ -75,19 +75,16 @@
 	font-weight: 400
 	line-height: 1.45
 
+.desc__btn
+	margin-top: 20px
+
 
 // join section
 .join
 	position: relative
-	min-height: 700px
-	background: url(../img/main-bg.jpg) no-repeat
-	overflow: hidden
+	background-image: url(../img/main-bg.jpg)
 	+cover
 	z-index: 0
-	+r(1020)
-		min-height: 600px
-	+r(767)
-		min-height: auto
 	&:before
 		content: ""
 		position: absolute
@@ -95,30 +92,41 @@
 		left: 0
 		right: 0
 		bottom: 0
-		background: rgba(#eee, 0.3)
+		background: rgba(#000, 0.2)
 		z-index: -1
+		+r(500)
+			background: rgba(#000, 0.5)
+
+.join__in
+	+clr
 
 .join__bl
-	padding-top: 220px
-	margin-right: -150px
-	text-align: right
-	font-size: 39px
+	float: right
+	max-width: 405px
+	padding: 50px 0 60px
+	font-size: 18px
+	color: #FFF
 	line-height: 1.2
 	+g
-	+r(1400)
-		margin-right: -100px
-	+r(1300)
-		margin-right: -50px
-	+r(1200)
-		margin-right: 0
+	+r(1020)
+		max-width: 350px
+	+r(767)
+		max-width: 300px
+	+r(500)
+		max-width: initial
+
+.join__ttl
+	text-transform: uppercase
+	font-size: 35px
+	margin-bottom: 10px
 	+r(1020)
 		font-size: 30px
 	+r(767)
-		padding: 150px 0
 		font-size: 28px
 	+r(500)
-		padding: 120px 0
 		font-size: 25px
 
 .join__btn
 	margin-top: 27px
+
+

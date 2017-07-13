@@ -3,11 +3,16 @@
 //=include lib/object-fit.min.js
 //=include _detectIE.js
 
+// var wow = require('./wowjs');
+
+// new WOW().init();
+
+
 
 $(document).ready(function() {
 	//=include _context-menu.js
-	detectIE();
 
-	$(function () { objectFitImages('.js-fit-img') });
+	detectIE();
+	objectFitImages('.js-fit-img');
 });
 

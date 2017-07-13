@@ -2335,6 +2335,11 @@ function detectIE() {
 		return false;
 }
 
+// var wow = require('./wowjs');
+
+// new WOW().init();
+
+
 $(document).ready(function () {
 		function toggleContextMenu() {
 				var btn = $('.js-context-btn');
@@ -2347,9 +2352,7 @@ $(document).ready(function () {
 		}
 
 		toggleContextMenu();
-		detectIE();
 
-		$(function () {
-				objectFitImages('.js-fit-img');
-		});
+		detectIE();
+		objectFitImages('.js-fit-img');
 });
