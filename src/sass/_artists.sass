@@ -1,18 +1,22 @@
 .artists
 
 .artists__in
+	position: relative
 	max-width: 1182px
 	padding: 110px 30px
 	margin: 0 auto
+	+r(500)
+		padding: 50px 30px
 
 .artists__wrap
 	display: flex
 	flex-wrap: wrap
 	margin: 0 -15px
 	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
 
 .artists__bl
-	position: relative
 	padding: 10px 15px
 	+r(500)
 		width: 100%
@@ -35,6 +39,23 @@
 		padding-top: 25px
 		+r(1020)
 			padding-top: 10px
+	&_absolute-l
+		position: absolute
+		top: 50%
+		right: 100%
+		transform: translate3d(0, -50%, 0)
+		+r(1800)
+			position: static
+			transform: none
+	&_absolute-r
+		position: absolute
+		top: 50%
+		left: 100%
+		transform: translate3d(0, -50%, 0)
+		+r(1800)
+			position: static
+			transform: none
+
 
 .artists__el
 	position: relative
@@ -51,8 +72,14 @@
 .artists__img
 	display: block
 	max-width: 100%
+	min-height: 150px
 	max-height: 500px
 
+
+body
+	&.is-ie
+		.artists .artists__img
+			width: 100%
 
 .artists__demo
 	position: absolute
@@ -65,3 +92,8 @@
 	visibility: hidden
 	transition: opacity 0.15s ease, visibility 0.15s ease
 	+vertical
+
+
+.js-fit-img
+	object-fit: cover
+	font-family: 'object-fit: cover;'
