@@ -74,35 +74,35 @@ html {
 
 @font-face {
   font-family: montserrat-light;
-  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+  src: url("fonts/montserrat-light.woff2") format("woff2"), url("fonts/montserrat-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: gillsans;
-  src: url("../fonts/gillsans.woff2") format("woff2"), url("../fonts/gillsans.woff") format("woff");
+  src: url("fonts/gillsans.woff2") format("woff2"), url("fonts/gillsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: gillsans-light;
-  src: url("../fonts/gillsans-light.woff2") format("woff2"), url("../fonts/gillsans-light.woff") format("woff");
+  src: url("fonts/gillsans-light.woff2") format("woff2"), url("fonts/gillsans-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: gillsans-bold;
-  src: url("../fonts/gillsans-bold.woff2") format("woff2"), url("../fonts/gillsans-bold.woff") format("woff");
+  src: url("fonts/gillsans-bold.woff2") format("woff2"), url("fonts/gillsans-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: didot;
-  src: url("../fonts/didot.woff2") format("woff2"), url("../fonts/didot.woff") format("woff");
+  src: url("fonts/didot.woff2") format("woff2"), url("fonts/didot.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
