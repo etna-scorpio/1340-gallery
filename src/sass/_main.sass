@@ -46,7 +46,7 @@
 
 // description section
 .desc
-	padding: 96px 0
+	padding: 96px 0 81px
 	background: #FFF
 	text-align: center
 	+r(500)
@@ -74,9 +74,71 @@
 	font-size: 18px
 	font-weight: 400
 	line-height: 1.45
+	br
+		+r(500)
+			display: none
 
 .desc__btn
 	margin-top: 20px
+
+// stats
+.stats
+	margin-top: 65px
+	+flex
+	justify-content: center
+	+r(767)
+		flex-wrap: wrap
+
+
+.stats__bl
+	position: relative
+	padding: 0 30px
+	margin: 15px 0
+	+r(767)
+		width: 50%
+		padding: 0 15px
+		&:before
+			display: none
+		&:first-child
+			&:before
+				display: block
+	+r(500)
+		width: 100%
+		&:not(:last-child)
+			&:after
+				display: block
+		&:first-child
+			&:before
+				display: none
+	&:not(:last-child)
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			border-right: 1px solid #cbcbcb
+		&:after
+			display: none
+			content: ""
+			position: absolute
+			left: 50%
+			width: 70%
+			margin-left: -35%
+			bottom: -15px
+			border-bottom: 1px solid #cbcbcb
+
+.stats__ttl
+	+gl
+	font-size: 22px
+	letter-spacing: 0.02em
+
+.stats__txt
+	+gl
+	font-size: 33px
+	letter-spacing: 0.02em
+	+r(767)
+		font-size: 28px
 
 
 // join section

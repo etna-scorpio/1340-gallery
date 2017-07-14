@@ -11,3 +11,5 @@ function detectIE() {
   // other browser
   return false;
 }
+
+detectIE();

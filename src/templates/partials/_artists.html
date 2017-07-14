@@ -2,12 +2,13 @@
 <div class="artists">
 	<div class="artists__in">
 		<div class="artists__title">
-			<h3 class="title-h3">Our artists</h3>
+			<h3 class="title-h3">Available soon</h3>
 		</div>
 		<div class="artists__wrap">
 			{{ mixins.artist({
 				mod: 'artists__bl_w40',
-				img: 'artist1'
+				img: 'artist1',
+				data: 'data-aos-delay=200'
 			}) }}
 			{{ mixins.artist({
 				mod: 'artists__bl_w60 artists__bl_pt25',
@@ -15,24 +16,30 @@
 			}) }}
 			{{ mixins.artist({
 				mod: 'artists__bl_w100',
-				img: 'artist3'
+				img: 'artist11'
 			}) }}
-			{# {{ mixins.artist({
-				mod: 'artists__bl_w40 artists__bl_absolute-l',
-				img: 'artist6'
-			})}} #}
 			{{ mixins.artist({
 				mod: 'artists__bl_w50',
 				img: 'artist4'
 			}) }}
 			{{ mixins.artist({
 				mod: 'artists__bl_w50 artists__bl_pt20',
-				img: 'artist5'
+				img: 'artist5',
+				data: 'data-aos-delay=200'
 			}) }}
-			{# {{ mixins.artist({
-				mod: 'artists__bl_w40 artists__bl_absolute-r',
-				img: 'artist7'
-			})}} #}
+			{{ mixins.artist({
+				mod: 'artists__bl_w50 artists__bl_pt25',
+				img: 'artist6'
+			}) }}
+			{{ mixins.artist({
+				mod: 'artists__bl_w50',
+				img: 'artist7',
+				data: 'data-aos-delay=200'
+			}) }}
+			{{ mixins.artist({
+				mod: 'artists__bl_w100',
+				img: 'artist8'
+			}) }}
 		</div>
 	</div>
 </div>

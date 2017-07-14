@@ -8,7 +8,7 @@ function build(cb) {
         'sprite:png',
         'sass',
         'nunjucks',
-        'js',
+        'webpack',
         'copy',
         // 'list-pages',
         cb

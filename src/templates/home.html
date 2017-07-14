@@ -15,7 +15,7 @@ title: 1340 Gallery
 				</a>
 			</div>
 			<div class="hero__txt">Coming soon</div>
-			<div class="hero__date">01-01-17</div>
+			<div class="hero__date">01-11-17</div>
 		</div>
 	</div>
 	<!-- end hero -->
@@ -25,29 +25,47 @@ title: 1340 Gallery
 			<h2 class="title-h2">1340gallery: No Commission</h2>
 			<div class="desc__subtitle">contemporary art curated by experts</div>
 			<div class="desc__text">
-				<p>Sell your art to a global community of art collectors.</p>
-				<p>Have your work seen by thousands of collectors worldwide.</p>
+				Sell your art to a global community of art collectors.</br>
+				Have your work seen by thousands of collectors worldwide.
 				<div class="desc__btn">
-					<a href="#" class="btn btn_bold">Join us</a>
+					<a href="#" class="btn">Apply to sell now >></a>
 				</div>
+			</div>
+			{% set stats = [{
+				title: 'Registered artists',
+				text: '4000+'
+			}, {
+				title: 'Available artwork',
+				text: '10.000+'
+			}, {
+				title: 'Days till launch',
+				text: '<div id="js-counter"></span>'
+			}] %}
+			<div class="stats">
+				{% for bl in stats %}
+				<div class="stats__bl">
+					<div class="stats__ttl">{{ bl.title }}</div>
+					<div class="stats__txt">{{ bl.text | safe }}</div>
+				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</section>
 	<!-- end desc -->
 	<!-- begin join -->
-	<div class="join">
+	{# <div class="join">
 		<div class="l-center">
 			<div class="join__in">
 				<div class="join__bl">
 					<p class="join__ttl">Sell your art to a global community of art collectors.</p>
 					<p>Have your work seen by thousands of collectors worldwide.</p>
 					<div class="join__btn">
-						<a href="#" class="btn btn_red btn_md-font">Apply to sell now >></a>
+						<a href="#" class="btn btn_red">Apply to sell now >></a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> #}
 	<!-- end join -->
 	{% include "partials/_artists.html" %}
 	{% include "partials/_footer.html" %}
