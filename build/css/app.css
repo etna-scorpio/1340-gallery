@@ -358,8 +358,8 @@ body {
   background: url(../img/join-bg.png) center center repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
@@ -416,8 +416,8 @@ body.is-ie .footer__slogan {
   background: url(../img/coming-soon.jpg) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   white-space: nowrap;
 }
 
