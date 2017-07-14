@@ -355,7 +355,7 @@ body {
   text-align: right;
   font-family: 'gillsans-bold', sans-serif;
   font-size: 75px;
-  background: -webkit-linear-gradient(transparent, transparent), url(../img/join-bg.png) top center repeat;
+  background: -webkit-linear-gradient(transparent, transparent), url(../img/coming-soon.jpg) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -429,7 +429,7 @@ body {
 }
 
 .desc {
-  padding: 96px 0 81px;
+  padding: 96px 0 70px;
   background: #FFF;
   text-align: center;
 }
@@ -458,7 +458,7 @@ body {
 }
 
 .stats {
-  margin-top: 65px;
+  margin-top: 40px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
