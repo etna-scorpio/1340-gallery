@@ -355,13 +355,17 @@ body {
   text-align: right;
   font-family: 'gillsans-bold', sans-serif;
   font-size: 75px;
-  background: -webkit-linear-gradient(transparent, transparent), url(../img/coming-soon.jpg) repeat;
+  background: url(../img/join-bg.png) center center repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   letter-spacing: 0.03em;
   line-height: 1.6;
+}
+
+body.is-ie .footer__slogan {
+  background: none;
 }
 
 .footer__bottom {
@@ -409,12 +413,16 @@ body {
   line-height: 1;
   letter-spacing: 0.05em;
   color: #000;
-  background: -webkit-linear-gradient(transparent, transparent), url(../img/coming-soon.jpg) repeat;
+  background: url(../img/coming-soon.jpg) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   white-space: nowrap;
+}
+
+body.is-ie .hero__txt {
+  background: none;
 }
 
 .hero__date {

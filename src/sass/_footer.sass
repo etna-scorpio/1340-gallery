@@ -15,11 +15,11 @@
 	text-align: right
 	+gb
 	font-size: 75px
-	background: -webkit-linear-gradient(transparent, transparent), url(../img/coming-soon.jpg) repeat
+	background: url(../img/join-bg.png) center center repeat
 	-webkit-background-clip: text
 	-webkit-text-fill-color: transparent
-	-moz-background-clip: text
-	-moz-text-fill-color: transparent
+	background-clip: text
+	text-fill-color: transparent
 	letter-spacing: 0.03em
 	line-height: 1.6
 	+r(1020)
@@ -27,6 +27,11 @@
 		line-height: 1.5
 	+r(767)
 		font-size: 40px
+
+body
+	&.is-ie
+		.footer__slogan
+			background: none
 
 .footer__bottom
 	padding: 18px 0 20px
