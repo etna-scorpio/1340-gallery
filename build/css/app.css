@@ -341,7 +341,9 @@ body {
 
 .menu__link span {
   display: inline-block;
+  transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .menu__link:hover {
@@ -349,6 +351,7 @@ body {
 }
 
 .menu__link:hover span {
+  -webkit-transform: translate3d(0, -1px, 0);
   transform: translate3d(0, -1px, 0);
 }
 
@@ -521,8 +524,10 @@ body.is-ie .hero__txt {
 
 .stats {
   margin: 40px 0 30px;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -623,13 +628,16 @@ body.is-ie .hero__txt {
 }
 
 .artists__wrap {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 -15px;
@@ -669,6 +677,7 @@ body.is-ie .hero__txt {
   position: absolute;
   top: 50%;
   right: 100%;
+  -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
 
@@ -676,6 +685,7 @@ body.is-ie .hero__txt {
   position: absolute;
   top: 50%;
   left: 100%;
+  -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
 
@@ -1540,51 +1550,62 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
  */
 [data-aos^='fade'][data-aos^='fade'] {
   opacity: 0;
+  transition-property: opacity, -webkit-transform;
   transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 
 [data-aos^='fade'][data-aos^='fade'].aos-animate {
   opacity: 1;
+  -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
 [data-aos='fade-up'] {
+  -webkit-transform: translate(0, 100px);
   -ms-transform: translate(0, 100px);
   transform: translate(0, 100px);
 }
 
 [data-aos='fade-down'] {
+  -webkit-transform: translate(0, -100px);
   -ms-transform: translate(0, -100px);
   transform: translate(0, -100px);
 }
 
 [data-aos='fade-right'] {
+  -webkit-transform: translate(-100px, 0);
   -ms-transform: translate(-100px, 0);
   transform: translate(-100px, 0);
 }
 
 [data-aos='fade-left'] {
+  -webkit-transform: translate(100px, 0);
   -ms-transform: translate(100px, 0);
   transform: translate(100px, 0);
 }
 
 [data-aos='fade-up-right'] {
+  -webkit-transform: translate(-100px, 100px);
   -ms-transform: translate(-100px, 100px);
   transform: translate(-100px, 100px);
 }
 
 [data-aos='fade-up-left'] {
+  -webkit-transform: translate(100px, 100px);
   -ms-transform: translate(100px, 100px);
   transform: translate(100px, 100px);
 }
 
 [data-aos='fade-down-right'] {
+  -webkit-transform: translate(-100px, -100px);
   -ms-transform: translate(-100px, -100px);
   transform: translate(-100px, -100px);
 }
 
 [data-aos='fade-down-left'] {
+  -webkit-transform: translate(100px, -100px);
   -ms-transform: translate(100px, -100px);
   transform: translate(100px, -100px);
 }
@@ -1596,61 +1617,74 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
  */
 [data-aos^='zoom'][data-aos^='zoom'] {
   opacity: 0;
+  transition-property: opacity, -webkit-transform;
   transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 
 [data-aos^='zoom'][data-aos^='zoom'].aos-animate {
   opacity: 1;
+  -webkit-transform: translate(0, 0) scale(1);
   -ms-transform: translate(0, 0) scale(1);
   transform: translate(0, 0) scale(1);
 }
 
 [data-aos='zoom-in'] {
+  -webkit-transform: scale(0.6);
   -ms-transform: scale(0.6);
   transform: scale(0.6);
 }
 
 [data-aos='zoom-in-up'] {
+  -webkit-transform: translate(0, 100px) scale(0.6);
   -ms-transform: translate(0, 100px) scale(0.6);
   transform: translate(0, 100px) scale(0.6);
 }
 
 [data-aos='zoom-in-down'] {
+  -webkit-transform: translate(0, -100px) scale(0.6);
   -ms-transform: translate(0, -100px) scale(0.6);
   transform: translate(0, -100px) scale(0.6);
 }
 
 [data-aos='zoom-in-right'] {
+  -webkit-transform: translate(-100px, 0) scale(0.6);
   -ms-transform: translate(-100px, 0) scale(0.6);
   transform: translate(-100px, 0) scale(0.6);
 }
 
 [data-aos='zoom-in-left'] {
+  -webkit-transform: translate(100px, 0) scale(0.6);
   -ms-transform: translate(100px, 0) scale(0.6);
   transform: translate(100px, 0) scale(0.6);
 }
 
 [data-aos='zoom-out'] {
+  -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 [data-aos='zoom-out-up'] {
+  -webkit-transform: translate(0, 100px) scale(1.2);
   -ms-transform: translate(0, 100px) scale(1.2);
   transform: translate(0, 100px) scale(1.2);
 }
 
 [data-aos='zoom-out-down'] {
+  -webkit-transform: translate(0, -100px) scale(1.2);
   -ms-transform: translate(0, -100px) scale(1.2);
   transform: translate(0, -100px) scale(1.2);
 }
 
 [data-aos='zoom-out-right'] {
+  -webkit-transform: translate(-100px, 0) scale(1.2);
   -ms-transform: translate(-100px, 0) scale(1.2);
   transform: translate(-100px, 0) scale(1.2);
 }
 
 [data-aos='zoom-out-left'] {
+  -webkit-transform: translate(100px, 0) scale(1.2);
   -ms-transform: translate(100px, 0) scale(1.2);
   transform: translate(100px, 0) scale(1.2);
 }
@@ -1659,30 +1693,37 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
  * Slide animations
  */
 [data-aos^='slide'][data-aos^='slide'] {
+  transition-property: -webkit-transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 [data-aos^='slide'][data-aos^='slide'].aos-animate {
+  -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
 [data-aos='slide-up'] {
+  -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
 }
 
 [data-aos='slide-down'] {
+  -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 [data-aos='slide-right'] {
+  -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
 [data-aos='slide-left'] {
+  -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
@@ -1694,38 +1735,48 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 [data-aos^='flip'][data-aos^='flip'] {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  transition-property: -webkit-transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 [data-aos='flip-left'] {
+  -webkit-transform: perspective(2500px) rotateY(-100deg);
   transform: perspective(2500px) rotateY(-100deg);
 }
 
 [data-aos='flip-left'].aos-animate {
+  -webkit-transform: perspective(2500px) rotateY(0);
   transform: perspective(2500px) rotateY(0);
 }
 
 [data-aos='flip-right'] {
+  -webkit-transform: perspective(2500px) rotateY(100deg);
   transform: perspective(2500px) rotateY(100deg);
 }
 
 [data-aos='flip-right'].aos-animate {
+  -webkit-transform: perspective(2500px) rotateY(0);
   transform: perspective(2500px) rotateY(0);
 }
 
 [data-aos='flip-up'] {
+  -webkit-transform: perspective(2500px) rotateX(-100deg);
   transform: perspective(2500px) rotateX(-100deg);
 }
 
 [data-aos='flip-up'].aos-animate {
+  -webkit-transform: perspective(2500px) rotateX(0);
   transform: perspective(2500px) rotateX(0);
 }
 
 [data-aos='flip-down'] {
+  -webkit-transform: perspective(2500px) rotateX(100deg);
   transform: perspective(2500px) rotateX(100deg);
 }
 
 [data-aos='flip-down'].aos-animate {
+  -webkit-transform: perspective(2500px) rotateX(0);
   transform: perspective(2500px) rotateX(0);
 }
 
@@ -1733,12 +1784,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
   .artists__bl_absolute-l {
     position: static;
+    -webkit-transform: none;
     -ms-transform: none;
     transform: none;
   }
 
   .artists__bl_absolute-r {
     position: static;
+    -webkit-transform: none;
     -ms-transform: none;
     transform: none;
   }
@@ -1867,6 +1920,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   }
 
   .stats {
+    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
