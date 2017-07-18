@@ -89,9 +89,14 @@ body
 // stats
 .stats
 	margin: 40px 0 30px
-	+flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	+r(767)
+		-ms-flex-wrap: wrap
 		flex-wrap: wrap
 
 

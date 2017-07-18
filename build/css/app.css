@@ -628,6 +628,7 @@ body.is-ie .hero__txt {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
