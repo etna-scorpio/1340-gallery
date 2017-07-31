@@ -7,21 +7,29 @@
 			</div>
 			<div class="menu-wrap">
 				<ul class="menu">
-					<li class="menu__option"><a href="#" class="menu__link"><span>Home</span></a></li>
-					<li class="menu__option"><a href="#" class="menu__link"><span>Blog</span></a></li>
-					<li class="menu__option"><a href="#" class="menu__link"><span>Magazine</span></a></li>
+					<li class="menu__option"><a href="/" class="menu__link"><span>Home</span></a></li>
+					<li class="menu__option"><a href="http://1340art.com" class="menu__link"><span>Blog</span></a></li>
+					<li class="menu__option"><a href="http://1340art.bigcartel.com/product/1340-art-magazine-may#_=_" class="menu__link"><span>Magazine</span></a></li>
 				</ul>
 				<div class="menu-wrap__btn">
 					<a href="#" class="btn">Join us now</a>
 				</div>
 			</div>
-			{% set contextMenu = ['About us', 'Company', 'Our process', 'Services', 'Contact us', 'F.A.Q.'] %}
+			{% set contextMenu = [{
+				link: '/faq',
+				title: 'Why 1340Gallery?'
+			}, {
+				link: '/terms',
+				title: 'Terms and conditions'
+			}, {
+				link: 'http://1340art.com/about',
+				title: 'Contact'
+			}] %}
 			<ul class="context-menu js-context-menu">
 				{% for i in contextMenu %}
-				<li class="context-menu__option"><a href="#" class="context-menu__link">{{ i }}</a></li>
+				<li class="context-menu__option"><a href="{{ i.link }}" class="context-menu__link">{{ i.title }}</a></li>
 				{% endfor %}
 			</ul>
-
 		</div>
 	</div>
 </header>
