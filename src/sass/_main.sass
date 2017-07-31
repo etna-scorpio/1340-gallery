@@ -1,54 +1,3 @@
-// hero block
-.hero
-	+r(500)
-		margin-top: 30px
-
-.hero__txt
-	margin-top: 45px
-	text-align: center
-	text-transform: uppercase
-	+gb
-	font-size: 117px
-	line-height: 1
-	letter-spacing: 0.05em
-	color: #000
-	background: url(../img/coming-soon.jpg) repeat
-	-webkit-background-clip: text
-	-webkit-text-fill-color: transparent
-	-moz-background-clip: text
-	-moz-text-fill-color: transparent
-	white-space: nowrap
-	+r(1200)
-		white-space: normal
-		font-size: 100px
-	+r(1020)
-		font-size: 80px
-	+r(767)
-		font-size: 70px
-	+r(500)
-		font-size: 55px
-
-body
-	&.is-ie
-		.hero__txt
-			background: none
-
-
-.hero__date
-	margin: 38px 0 88px
-	text-transform: uppercase
-	text-align: center
-	+gl
-	color: #000
-	font-size: 89px
-	line-height: 80px
-	letter-spacing: 0.31em
-	+r(1020)
-		font-size: 70px
-	+r(767)
-		margin: 38px 0 60px 15px
-		font-size: 50px
-
 // description section
 .desc
 	padding: 90px 0 80px
@@ -149,7 +98,7 @@ body
 // join section
 .join
 	position: relative
-	background-image: url(../img/main-bg.jpg)
+	background-image: url(../img/new-bg.jpg)
 	+cover
 	z-index: 0
 	&:before
@@ -159,7 +108,7 @@ body
 		left: 0
 		right: 0
 		bottom: 0
-		background: rgba(#000, 0.2)
+		background: rgba(#000, 0.3)
 		z-index: -1
 		+r(500)
 			background: rgba(#000, 0.5)
@@ -170,28 +119,28 @@ body
 .join__bl
 	float: right
 	max-width: 405px
-	padding: 50px 0 60px
+	padding: 50px 0 60px 50px
 	font-size: 18px
 	color: #FFF
 	line-height: 1.2
 	+g
 	+r(1020)
 		max-width: 350px
+		padding-left: 60px
 	+r(767)
 		max-width: 300px
 	+r(500)
 		max-width: initial
+		padding-left: 0
 
 .join__ttl
 	text-transform: uppercase
 	font-size: 35px
 	margin-bottom: 10px
 	+r(1020)
-		font-size: 30px
-	+r(767)
 		font-size: 28px
 	+r(500)
-		font-size: 25px
+		font-size: 24px
 
 .join__btn
 	margin-top: 27px

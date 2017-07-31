@@ -1,0 +1,60 @@
+// hero block
+.hero
+	+r(500)
+		margin-top: 30px
+
+.hero__txt
+	margin-top: 45px
+	text-align: center
+	text-transform: uppercase
+	+gb
+	font-size: 117px
+	line-height: 1
+	letter-spacing: 0.05em
+	color: #000
+	background: url(../img/coming-soon.jpg) repeat
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	-moz-background-clip: text
+	-moz-text-fill-color: transparent
+	white-space: nowrap
+	+r(1200)
+		white-space: normal
+		font-size: 100px
+	+r(1020)
+		font-size: 80px
+	+r(767)
+		font-size: 70px
+	+r(500)
+		font-size: 55px
+
+body
+	&.is-ie
+		.hero__txt
+			background: none
+
+
+.hero__date
+	margin: 38px 0 88px
+	text-transform: uppercase
+	text-align: center
+	+gl
+	color: #000
+	font-size: 89px
+	line-height: 80px
+	letter-spacing: 0.31em
+	+r(1020)
+		font-size: 70px
+	+r(767)
+		margin: 38px 0 60px 15px
+		font-size: 50px
+
+
+.hero__svg
+	svg
+		width: 100%
+		height: 100%
+
+.hero__news
+	font-size: 117px
+	line-height: 1
