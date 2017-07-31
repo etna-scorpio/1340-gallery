@@ -14,26 +14,38 @@
 				</div>
 				<div class="footer__menu">
 				{% set footerLists = [{
-						link: '/faq',
-						title: 'Why 1340Gallery?'
-					}, {
-						link: 'http://1340art.com',
-						title: 'Blog'
-					}, {
-						link: 'http://1340art.bigcartel.com/product/1340-art-magazine-may#_=_',
-						title: 'Magazine'
-					}, {
-						link: '/terms',
-						title: 'Terms and conditions'
-					}, {
-						link: 'http://1340art.com/about',
-						title: 'Contact'
-				}] %}
+					option: [
+						{
+							link: '/faq',
+							title: 'Why 1340Gallery?'
+						}, {
+							link: 'http://1340art.com',
+							title: 'Blog'
+						}, {
+							link: 'http://1340art.bigcartel.com/product/1340-art-magazine-may#_=_',
+							title: 'Magazine'
+						}
+					]
+					},{
+						option: [
+							{
+								link: '/terms',
+								title: 'Terms and conditions'
+							}, {
+								link: 'http://1340art.com/about',
+								title: 'Contact'
+							}
+						]
+					}] %}
+				{% for list in footerLists %}
 				<ul class="footer-list">
-					{% for bl in footerLists %}
-					<li class="footer-list__option"><a href="{{ bl.link }}" class="footer-list__link">{{ bl.title }}</a></li>
+					{% for option in list.option %}
+					<li class="footer-list__option">
+						<a href="{{ option.link }}" class="footer-list__link">{{ option.title }}</a>
+					</li>
 					{% endfor %}
 				</ul>
+				{% endfor %}
 				</div>
 			</div>
 		</div>
