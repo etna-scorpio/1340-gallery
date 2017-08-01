@@ -9,7 +9,7 @@ objectFitImages('.js-fit-img');
 AOS.init({
 	duration: 500,
 	easing: 'ease',
-	offset: 200,
+	offset: 50,
 	disable: 'mobile'
 });
 
